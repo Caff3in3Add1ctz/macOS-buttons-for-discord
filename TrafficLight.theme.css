@@ -1,0 +1,67 @@
+/**
+ * @name TrafficLightWithInboxHelp
+ * @description macOS inspired traffic light buttons for Discord using BetterDiscord. Always visible.
+ * @version 1.1
+ * @author You
+ */
+
+/* === HIDE HELP & INBOX BUTTONS === */
+[aria-label="Inbox"],
+[aria-label="Help"],
+[aria-label="Inbox"] + .iconWrapper-2awDjA,
+[aria-label="Help"] + .iconWrapper-2awDjA {
+  display: none !important;
+}
+
+/* Hide SVG icons in buttons */
+.winButton_c38106 svg {
+  display: none !important;
+}
+
+/* === Anchor window buttons to always-visible bar === */
+.withFrame-2dL45i .winButtons_c38106 {
+  position: absolute !important;
+  top: 10px !important;
+  right: 12px !important; /* adjust for macOS-style */
+  height: 36px;
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+  z-index: 9999;
+}
+
+/* === macOS button style ===*/
+.winButton_c38106 {
+  width: 12px;
+  height: 12px;
+  border-radius: 9999px !important; /* force circle */
+  margin-left: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  -webkit-app-region: no-drag;
+}
+/* Colors for each control */
+.winButtonMinMax_c38106[aria-label="Minimize"] {
+  background-color: #ffbd2e;
+}
+.winButtonMinMax_c38106[aria-label="Maximize"] {
+  background-color: #28c840;
+}
+.winButtonClose_c38106 {
+  background-color: #ff5f57;
+  margin-right: 12px;
+}
+
+.winButton_c38106:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+/* === Make title bar draggable, except buttons === */
+.appMount-3lHmkl,
+.withFrame-2dL45i {
+  -webkit-app-region: drag;
+}
+.winButton_c38106 {
+  -webkit-app-region: no-drag;
+}
