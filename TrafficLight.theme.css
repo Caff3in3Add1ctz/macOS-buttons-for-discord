@@ -12,8 +12,7 @@
 [aria-label="Help"] + .iconWrapper-2awDjA {
   display: none !important;
 }
-/* makes the window draggable*/
--webkit-app-region: drag;
+
 
 /* Hide SVG icons in buttons */
 .winButton_c38106 svg {
