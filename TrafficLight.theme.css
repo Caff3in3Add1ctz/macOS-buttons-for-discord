@@ -1,8 +1,8 @@
 /**
  * @name TrafficLightWithInboxHelp
- * @description macOS inspired traffic light buttons for Discord using BetterDiscord. Always visible.
- * @version 1.1
- * @author You
+ * @description macOS inspired traffic light buttons for Discord on windows using BetterDiscord or Vencord. Always visible.
+ * @version 1.2
+ * @author Caff3in3Add1ctz
  */
 
 /* === HIDE HELP & INBOX BUTTONS === */
@@ -12,6 +12,8 @@
 [aria-label="Help"] + .iconWrapper-2awDjA {
   display: none !important;
 }
+/* makes the window draggable*/
+-webkit-app-region: drag;
 
 /* Hide SVG icons in buttons */
 .winButton_c38106 svg {
