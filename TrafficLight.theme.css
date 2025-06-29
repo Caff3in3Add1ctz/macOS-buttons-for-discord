@@ -5,13 +5,6 @@
  * @author Caff3in3Add1ctz
  */
 
-/* === HIDE HELP & INBOX BUTTONS === */
-[aria-label="Inbox"],
-[aria-label="Help"],
-[aria-label="Inbox"] + .iconWrapper-2awDjA,
-[aria-label="Help"] + .iconWrapper-2awDjA {
-  display: none !important;
-}
 
 
 /* Hide SVG icons in buttons */
