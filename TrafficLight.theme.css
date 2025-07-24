@@ -17,6 +17,7 @@
   position: absolute !important;
   top: 12px !important;
   right: 12px !important; /* adjust for macOS-style */
+  left: 60px !important; /* shifted to avoid DevTools icon (~36–48px wide) */
   height: 36px;
   display: flex !important;
   align-items: center;
@@ -24,6 +25,7 @@
   gap: 6px;
   z-index: 9999;
 }
+
 
 /* === macOS button style ===*/
 .winButton_c38106 {
