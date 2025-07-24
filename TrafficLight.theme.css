@@ -16,7 +16,7 @@
 .withFrame-2dL45i .winButtons_c38106 {
   position: absolute !important;
   top: 12px !important;
-  right: 12px !important; /* adjust for macOS-style */
+  left: 60px !important; /* shifted to avoid DevTools icon (~36–48px wide) */
   height: 36px;
   display: flex !important;
   align-items: center;
