@@ -36,11 +36,15 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   -webkit-app-region: no-drag;
 }
-/* Colors for each control */
-.winButtonMinMax_c38106[aria-label="Minimize"] {
+/* Minimize */
+.winButtonMinMax_c38106[aria-label="Minimize"],
+.winButtonMinMax_c38106[aria-label="Minimise"] {
   background-color: #FFBD44;
 }
-.winButtonMinMax_c38106[aria-label="Maximize"] {
+
+/* Maximize */
+.winButtonMinMax_c38106[aria-label="Maximize"],
+.winButtonMinMax_c38106[aria-label="Maximise"] {
   background-color: #00CA4E;
 }
 .winButtonClose_c38106 {
