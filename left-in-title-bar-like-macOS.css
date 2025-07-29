@@ -1,0 +1,58 @@
+/* Hide SVG icons in buttons */
+.winButton_c38106 svg {
+  display: none !important;
+}
+
+/* === Anchor window buttons to always-visible bar === */
+.withFrame-2dL45i .winButtons_c38106 {
+  position: absolute !important;
+  top: 12px !important;
+  left: 12px !important; /* moved to left */
+  right: auto !important; /* unset right positioning */
+  height: 36px;
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+  z-index: 9999;
+}
+
+/* === macOS button style ===*/
+.winButton_c38106 {
+  width: 12px;
+  height: 12px;
+  border-radius: 9999px !important; /* force circle */
+  margin-left: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  -webkit-app-region: no-drag;
+}
+/* Minimize | UK Language Fix v1.2 */
+.winButtonMinMax_c38106[aria-label="Minimize"],
+.winButtonMinMax_c38106[aria-label="Minimise"] {
+  background-color: #FFBD44;
+}
+
+/* Maximize | UK Language Fix V1.2 */
+.winButtonMinMax_c38106[aria-label="Maximize"],
+.winButtonMinMax_c38106[aria-label="Maximise"] {
+  background-color: #00CA4E;
+}
+.winButtonClose_c38106 {
+  background-color: #FF605C;
+  margin-right: 0;
+  margin-left: 6px;
+}
+
+.winButton_c38106:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+/* === Make title bar draggable, except buttons === */
+.appMount-3lHmkl,
+.withFrame-2dL45i {
+  -webkit-app-region: drag;
+}
+.winButton_c38106 {
+  -webkit-app-region: no-drag;
+}
